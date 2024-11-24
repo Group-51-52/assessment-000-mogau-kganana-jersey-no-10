@@ -67,17 +67,21 @@ TODO: define a function called fizzbuzz and implement the fucntionality above.
     for number in newlist:
         if number % 3 == 0 and number % 5 == 0:
             number = "Fizzbuzz"
+            print(number)
             listyaka.append(number)
         elif number % 3 == 0:
             number = "Fizz"
+            print(number)
             listyaka.append(number)
         elif number % 5 == 0:
             number = "Buzz"
+            print(number)
             listyaka.append(number)
         else:
+            print(number)
             listyaka.append(number)
 
-    return listyaka
+    return number
 
 # Question 5
 
