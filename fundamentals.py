@@ -81,7 +81,7 @@ TODO: define a function called fizzbuzz and implement the fucntionality above.
             print(number)
             listyaka.append(number)
 
-    return number
+    # return number
 
 # Question 5
 
