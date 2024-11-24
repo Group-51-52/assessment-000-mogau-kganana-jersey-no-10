@@ -52,7 +52,7 @@ def get_citizenship(id_number):
 # Question 4
 
 
-def fizzbuzz(n:int):
+def fizzbuzz(n: int):
     """
 Fizzbuzz is a programme that prints the numbers from 1 to n,
 but for multiples of 3, it prints "Fizz" instead of the number,
@@ -63,7 +63,7 @@ TODO: define a function called fizzbuzz and implement the fucntionality above.
 """
 
     newlist = [number for number in range(1, n+1)]
-    listyaka=[]
+    listyaka = []
     for number in newlist:
         if number % 3 == 0 and number % 5 == 0:
             number = "Fizzbuzz"
@@ -76,7 +76,7 @@ TODO: define a function called fizzbuzz and implement the fucntionality above.
             listyaka.append(number)
         else:
             listyaka.append(number)
-            
+
     return listyaka
 
 # Question 5
@@ -105,24 +105,21 @@ def check_number(n: int):
     If n is non-positive and even then return 'Very weird'
     If n is non-positive and odd then return 'Extremely Weird'
     """
-    if n % 2 == 0:
-        if n >= 2 and n <= 5:
-            return "Not Weird"
-        elif n >= 6 and n <= 20:
-            return "Weird"
-        elif n > 20:
-            return "Not weird"
-        elif n <= -1:
-            return "Very weird"
-
-    if n % 2 != 0:
-        if n <= 0:
-            return "Extremely weird"
-        else:
-            return "Weird"
-
     if n == 0:
-        return "Neutral"
+        return "Neutral" 
+    elif n % 2 == 0 and n >= 2 and n <= 5:
+        return "Not Weird"
+    elif n % 2 == 0 and n >= 6 and n <= 20:
+        return "Weird"
+    elif n % 2 == 0 and n > 20:
+        return "Not weird"
+    elif n % 2 == 0 and n <= -1:
+        return "Very weird"
+    elif n <= 0 and n % 2 != 0:
+        return "Extremely weird"
+    else:
+        return "Weird"
+
 
 
 print(get_citizenship(9907155471086))
